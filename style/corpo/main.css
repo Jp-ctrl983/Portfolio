@@ -20,6 +20,7 @@
     padding: 7px;
     margin: 1px;
     font-size: 10pt;
+    text-indent: 6px;
 }
 
 .main_contain_filho2 {
@@ -38,6 +39,10 @@
     font-weight: 400;
 }
 
+.main_contain_ul {
+    margin-top: 10px;
+}
+
 li.main_contain_filho2_composer {
     font-weight: 500;
     font-size: 18px;
@@ -46,6 +51,9 @@ li.main_contain_filho2_composer {
 
 .main_contain_filho2_paragrafo_composer {
     text-align: justify;
-    font-size: 12px
+    padding: 7px;
+    margin: 1px;
+    font-size: 10pt;
+    text-indent: 6px;
 }
 
