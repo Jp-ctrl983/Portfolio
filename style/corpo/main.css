@@ -2,15 +2,11 @@
     width: 80vw;
     height: auto;
     margin: auto;
-    background: #F9F9F9;
+    /* background: #F9F9F9; */
     padding: 1em;
     border-radius: 10px;
     margin-top: 7px;
-    box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.137);
-}
-
-.main_contain_filho {
-    border-bottom: 1px solid black;
+    /* box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.137); */
 }
 
 .descricao_filho {
@@ -25,3 +21,31 @@
     margin: 1px;
     font-size: 10pt;
 }
+
+.main_contain_filho2 {
+    padding: 1em;
+}
+
+.subtitulo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #dfdfdf2c;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+li.main_contain_filho2_composer {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main_contain_filho2_paragrafo_composer {
+    text-align: justify;
+    font-size: 12px
+}
+

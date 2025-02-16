@@ -2,13 +2,9 @@
 
 @import url("cabesalho/header.css");
 @import url("corpo/main.css");
+@import url("rodape/rodape.css");
 
 body {
     font-family: 'Roboto', sans-serif;
     
 }
-
-:root {
-    
-}
- 
