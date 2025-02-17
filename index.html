@@ -6,9 +6,13 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -23,7 +27,7 @@
             </button>
 
             <ul class="lista_cabesalho">
-                <li class="lista_cabesalho_filho"><a href=""></a></li>
+                <li class="lista_cabesalho_filho"><a href="#Projeto_composer">Projeto Composer</a></li>
             </ul>
         </div>
     </header>
@@ -36,7 +40,11 @@
             </ul>
 
             <p class="main_contain_paragrafo">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, placeat! A ab dolores animi accusantium quod sint provident minus rem non voluptatem eius, tempore maxime consequatur saepe! Dolores, assumenda placeat!
+               Meu nome e João Pedro, moro na cidade de gurupi no estado do Tocantins 
+               fiz este portifolio em busca do meu primeiro emprego no ramo da programação
+               ja estudo progrmação a 1 ano e 2 meses, atualmante estou fazendo cursos na plataforma de encino <a href="https://cursos.alura.com.br/">Alura</a>
+               tenho conhecimeto em linguagens como html css javascript basico, php e java,
+               banco de dados data since. <span class="Destaque">Abaixo irei listar alguns dos meus principais projetos:</span>
             </p>
         </section>
 
@@ -44,17 +52,80 @@
             Projetos
         </h2>
 
-        <section class="main_contain_filho2">
+        <section class="main_contain_filho2" id="Projeto_composer">
             <ul class="main_contain_ul">
-                <li class="main_contain_filho2_composer">
+                <li class="main_contain_filho">
                     Gerenciador de dependencias composer
                 </li>
             </ul>
 
             <p class="main_contain_filho2_paragrafo_composer">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, adipisci eligendi culpa officia perferendis tenetur sapiente odit autem voluptatibus quod animi fugiat aspernatur consequuntur id quis voluptate reiciendis. Error, debitis!
+              Primeiro irei falar sera de uma gerenciador de dependencias composer tenho em projeto que faz buscas de cursos Os pacotes utilisados forão o guzzlehttp/guzzle 7.9,symfony/dom-crawler 4.2,symfony/css-selector 7.1 da alura codigos escritos em php, o pacote pode ser baixado pelo <a href="https://packagist.org/packages/jp-ctrl983/buscador-curso" target="_blank" class="links">packagist.org</a>, ou se preferiri ver o codigo no <a href="https://github.com/Jp-ctrl983/composer-buscador-alura-" class="links">github</a>           
             </p>
+
+            <button type="button" class="composer_json" id="botao_composer" onclick="composer()">Mostrar composer.json</button>
+
+            <div class="json_composer" id="div_composer">
+                <pre>
+                    <code class="json">
+                    {
+                        "name": "jp-ctrl983/buscador-curso",
+                        "description": "Buscador de cursos alura",
+                        "type": "library",
+                        "authors": [
+                            {
+                                "name": "Jp-ctrl983",
+                                "email": "joao.fernandes37.pedro@gmail.com"
+                            }
+                        ],
+                        "require": {
+                            "guzzlehttp/guzzle": "^7.9",
+                            "symfony/dom-crawler": "^4.2",
+                            "symfony/css-selector": "^7.1"
+                        },
+                        "autoload": {
+                            "files": ["./functions.php"],
+                            "psr-4": {
+                                "Alura\BuscadorDeCursos\": "src/"
+                            }
+                        },
+                        "require-dev": {
+                            "phpunit/phpunit": "^8.5",
+                            "squizlabs/php_codesniffer": "^3.10",
+                            "phan/phan": "^5.4"
+                        },
+                        "scripts": {
+                            "tests": "phpunit Tests\TestBuscadorDeCursos.php",
+                            "cs": "phpcs --standard=PSR12 src/",
+                            "phan": "phan --allow-polyfill-parser",
+                            "check": [
+                                "@phan",
+                                "@tests",
+                                "@cs"
+                            ],
+                            "post-update-cmd": [
+                                "@tests"
+                            ]
+                        },
+                        "scripts-descriptions": {
+                            "check": "Roda as verificações do código. PHAN, PHPCS e PHPUNIT"
+                        },
+                        "license": "GPL-3.0",
+                        "bin": ["buscar-cursos.php"]
+                    }
+                   </code> 
+                </pre>
+            </div>
         </section>
+
+        <section class="main_contain_filho3" id="Projetos_java">
+            <ul class="main_contain_ul">
+                <li class="main_contain_filho">
+                    Java
+                </li>
+            </ul>
+        </section>
+
     </main>
 
     <footer class="rodape">
@@ -65,6 +136,9 @@
         <a href="https://www.instagram.com/jpfernandesnasc/" target="_blank"><img src="img/instagram.png" alt="instagram" class="redes_sociais"></a>
         <a href="https://github.com/Jp-ctrl983" target="_blank"><img src="img/github.png" alt="github" class="redes_sociais"></a>
         <a href="https://www.youtube.com/@Joao.desenvolvedor" target="_blank"><img src="img/youtube.png" alt="youtube" class="redes_sociais"></a>
+
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
