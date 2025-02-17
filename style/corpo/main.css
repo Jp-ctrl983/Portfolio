@@ -15,16 +15,12 @@
     text-decoration: none;
 }
 
-.main_contain_paragrafo {
+.mainParagrafos {
     text-align: justify;
     padding: 7px;
     margin: 1px;
     font-size: 10pt;
     text-indent: 6px;
-}
-
-.main_contain_filho2 {
-    padding: 1em;
 }
 
 .subtitulo {
@@ -37,24 +33,6 @@
     padding: 6px;
     font-size: 18px;
     font-weight: 400;
-}
-
-.main_contain_ul {
-    margin-top: 10px;
-}
-
-li.main_contain_filho {
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.main_contain_filho2_paragrafo_composer {
-    text-align: justify;
-    padding: 7px;
-    margin: 1px;
-    font-size: 10pt;
-    text-indent: 6px;
 }
 
 .Destaque {
@@ -84,10 +62,60 @@ li.main_contain_filho {
     display: block;
 }
 
+.sectionsClass {
+    margin: 10px;
+    padding: 10px;
+}
+
 .json_composer {
     display: none;
 }
 
 .json_composer_add {
     display: block;
+}
+
+/*todas as demais midias*/
+/* Typical device breakpoints
+---------------------------
+pequenas telas:ate 600px
+celular: 600px ate 768px
+tablet:768px ate 992px
+desktop:992px ate 1200px
+grandes telas:acima de 1200px
+---------------------------------
+*/
+
+@media screen and (min-width: 662px) and (max-width: 950px){
+
+    .descricao_filho {
+        font-weight: 500;
+        font-size: 20pt;
+        text-decoration: none;
+    }
+
+    .mainParagrafos {
+        text-align: justify;
+        padding: 6px;
+        margin: 2.5px;
+        font-size: 16pt;
+        text-indent: 6px;
+    }
+    
+    .subtitulo {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        background: #dfdfdf17;
+        width: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 7px;
+        font-size: 20pt;
+        font-weight: 600;
+        box-shadow: 10px 1px 25px rgba(0, 0, 0, 0.137)
+    }
+}
+
+@media screen and (min-width: 950px) {
+    
 }
