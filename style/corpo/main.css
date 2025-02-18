@@ -23,6 +23,8 @@
     margin: 1px;
     font-size: 10pt;
     text-indent: 6px;
+    word-spacing: 5px;
+    line-height: 1.2;
 }
 
 .subtitulo {
@@ -105,6 +107,12 @@
 .java_icons {
     width: 24px;
 }
+
+.icons_html {
+    width: 24px;
+}
+
+
 
 /*todas as demais midias*/
 /* Typical device breakpoints
