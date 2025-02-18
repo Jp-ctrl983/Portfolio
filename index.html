@@ -15,13 +15,13 @@
 
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body class=" resize-box">
     <header class="cabesalho">
         <h1 class="cabesalho_titulo">
             <span class="contain_filho_cabesalho">Portfolio</span> João Pedro F. Nascimento
         </h1>
 
-        <div class="abesalho_titulo">
+        <div class="div_img_burger">
             <button class="button_cabesalho" onclick="click()">
                 <img src="img/menu.png" alt="menu.png" class="cabesalho_titulo_imagemMenu">
             </button>
@@ -52,17 +52,24 @@
             Projetos
         </h2>
 
-        <section class="main_contain_filho2 sectionsClass" id="Projeto_composer">
-            <ul class="descricao">
-                <li class="descricao_filho">Gerenciador de dependencias composer</li>
-            </ul> 
+        <section class="main_contain_filho sectionsClass" id="Projeto_composer">
+            
+            <div class="main_icons">
+                <ul class="descricao">
+                    <li class="descricao_filho">Gerenciador de dependencias composer</li>
+                </ul>
+                <img src="img/logo-composer-transparent.png" alt="Composer" class="imgagens_icons">
+            </div> 
 
             <p class="mainParagrafos">
               Primeiro irei falar sera de uma gerenciador de dependencias composer tenho em projeto que faz buscas de cursos Os pacotes utilisados forão o guzzlehttp/guzzle 7.9,symfony/dom-crawler 4.2,symfony/css-selector 7.1 da alura codigos escritos em php, o pacote pode ser baixado pelo <a href="https://packagist.org/packages/jp-ctrl983/buscador-curso" target="_blank" class="links">packagist.org</a>, ou se preferiri ver o codigo no <a href="https://github.com/Jp-ctrl983/composer-buscador-alura-" class="links">github</a>           
             </p>
 
-            <button type="button" class="composer_json" id="botao_composer" onclick="composer()">Mostrar composer.json</button>
+                <button type="button" class="composer_json" id="botao_composer" onclick="composer()">
+                    Mostrar composer.json
+                </button> 
 
+            
             <div class="json_composer" id="div_composer">
                 <pre>
                     <code class="json">
@@ -116,16 +123,22 @@
             </div>
         </section>
 
-        <section class="main_contain_filho3 sectionsClass" id="Projetos_java">
-            <ul class="descricao">
-                <li class="descricao_filho">Java</li>
-            </ul> 
+        <section class="main_contain_filho sectionsClass" id="Projetos_java">
+            <div class="main_icons">
+                <ul class="descricao">
+                    <li class="descricao_filho">Java</li>
+                </ul>
+                <img src="img/java.png" alt="Java" class="imgagens_icons java_icons">
+            </div> 
 
             <p class="mainParagrafos">
-                Meu conhecimento em java e intermediario conheso bem a sintaxe de orintação a objeto
-                variaveis tipos de dados detre ourtos assuntos como api, cursos feitos na escola de programação Alura. 
+                Meu conhecimento em java e intermediario conheso bem a sintaxe de orintação a objeto e seus 4 pilares (Polimorfismo, Abstratismo, Encapsulamento, Herança) conheço tebém sitaxes basicas como variaveis tipos de dados detre ourtos assuntos como api, cursos feitos na escola de programação Alura. 
             </p>
+
+            <a href="https://github.com/Jp-ctrl983/src/blob/main/br/principal/Principal.java" target="_blank" class="java_git" id="botao_composer">Exemplo de codigo no git hub</a>
         </section>
+
+        
 
     </main>
 
@@ -139,7 +152,6 @@
         <a href="https://www.youtube.com/@Joao.desenvolvedor" target="_blank"><img src="img/youtube.png" alt="youtube" class="redes_sociais"></a>
 
     </footer>
-
     <script src="js/app.js"></script>
 </body>
 </html>

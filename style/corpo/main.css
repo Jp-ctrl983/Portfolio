@@ -7,6 +7,8 @@
     border-radius: 10px;
     margin-top: 7px;
     /* box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.137); */
+    transition: width 0.9s, heigth 3s;   
+    transition-timing-function: ease 1s;
 }
 
 .descricao_filho {
@@ -75,6 +77,35 @@
     display: block;
 }
 
+.java_git {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(121, 121, 121);
+    padding: 5px 2px 4px 2px;
+    border-radius:2px;
+    transition: all 1s ease-out;
+    font-size: 10pt;
+}
+
+.java_git:hover {
+    text-decoration: underline;
+}
+
+.main_icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imgagens_icons {
+    width: 36.6px;
+    margin-left: 5px;
+}
+
+.java_icons {
+    width: 24px;
+}
+
 /*todas as demais midias*/
 /* Typical device breakpoints
 ---------------------------
@@ -86,7 +117,7 @@ grandes telas:acima de 1200px
 ---------------------------------
 */
 
-@media screen and (min-width: 662px) and (max-width: 950px){
+@media screen and (min-width: 662px){
 
     .descricao_filho {
         font-weight: 500;
@@ -98,7 +129,7 @@ grandes telas:acima de 1200px
         text-align: justify;
         padding: 6px;
         margin: 2.5px;
-        font-size: 16pt;
+        font-size: 13pt;
         text-indent: 6px;
     }
     
@@ -114,8 +145,10 @@ grandes telas:acima de 1200px
         font-weight: 600;
         box-shadow: 10px 1px 25px rgba(0, 0, 0, 0.137)
     }
-}
 
-@media screen and (min-width: 950px) {
-    
+    .main_contain_filho {
+        width: 82%;
+        margin: auto;
+        
+    }
 }
