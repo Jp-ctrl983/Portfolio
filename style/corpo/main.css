@@ -116,6 +116,7 @@
 .imgagens_icons {
     width: 36.6px;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .java_icons {
@@ -126,7 +127,18 @@
     width: 24px;
 }
 
+.linksParaDocumentacao {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    transition: 1s ;
+}
 
+.linksParaDocumentacao:hover {
+    text-decoration: underline;
+    padding: 2px;
+    margin: 2px;
+    color: black;
+}
 
 /*todas as demais midias*/
 /* Typical device breakpoints
