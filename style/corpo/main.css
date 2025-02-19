@@ -151,7 +151,7 @@ grandes telas:acima de 1200px
 ---------------------------------
 */
 
-@media screen and (min-width: 662px){
+@media screen and (min-width: 724px) and (max-width: 1024px) {
 
     .descricao_filho {
         font-weight: 500;
@@ -181,8 +181,34 @@ grandes telas:acima de 1200px
     }
 
     .main_contain_filho {
-        width: 82%;
+        width: 80%;
         margin: auto;
-        
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .main_contain_filho {
+        width: 60%;
+        margin: auto;
+    }
+
+    .descricao_filho {
+        font-weight: 550;
+        font-size: 21pt;
+        text-decoration: none;
+    }
+
+    .subtitulo {
+        font-size: 21pt;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+    }
+
+    .mainParagrafos {
+        text-align: justify;
+        padding: 6px;
+        margin: 2.5px;
+        font-size: 14.5pt;
+        text-indent: 6px;
+    }    
 }
