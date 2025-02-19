@@ -9,6 +9,8 @@
     /* box-shadow: 10px 1px 20px rgba(0, 0, 0, 0.137); */
     transition: width 0.9s, heigth 3s;   
     transition-timing-function: ease 1s;
+
+    margin-top: 70px;
 }
 
 .descricao_filho {
@@ -75,10 +77,6 @@
     display: none;
 }
 
-.json_composer_add {
-    display: block;
-}
-
 .java_git {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -140,6 +138,12 @@
     color: black;
 }
 
+.main_contain_filho {
+    width: 80%;
+    margin: auto;
+    padding-top: 78.5px;
+}
+
 /*todas as demais midias*/
 /* Typical device breakpoints
 ---------------------------
@@ -181,15 +185,16 @@ grandes telas:acima de 1200px
     }
 
     .main_contain_filho {
-        width: 80%;
         margin: auto;
+        padding-top: 100px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .main_contain_filho {
-        width: 60%;
+        width: 55%;
         margin: auto;
+        padding-top: 100px;
     }
 
     .descricao_filho {

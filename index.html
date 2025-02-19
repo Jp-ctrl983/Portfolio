@@ -22,29 +22,38 @@
         </h1>
 
         <div class="div_img_burger">
-            <button class="button_cabesalho" onclick="click()">
-                <img src="img/menu.png" alt="menu.png" class="cabesalho_titulo_imagemMenu">
-            </button>
 
-            <ul class="lista_cabesalho">
-                <li class="lista_cabesalho_filho"><a href="#Projeto_composer">Projeto Composer</a></li>
-            </ul>
+            <img src="img/menu.png" alt="menu.png" class="cabesalho_titulo_imagemMenu" onclick="clickMenu()">
+
+            <menu class="navegacao" id="itens">
+                <ul class="lista_cabesalho">
+                    <li class="lista_cabesalho_filho"><a href="#sobreMIM" class="links_navegacao" >Sobre mim</a></li>
+
+                    <li class="lista_cabesalho_filho"><a href="#Projeto_composer" class="links_navegacao">Projeto Composer</a></li>
+                    <li class="lista_cabesalho_filho"><a href="#Projetos_java" class="links_navegacao">Java</a></li>
+                    <li class="lista_cabesalho_filho"><a href="#php" class="links_navegacao">php</a></li>
+                    <li class="lista_cabesalho_filho"><a href="#JavaScript" class="links_navegacao">JavaScript</a></li>
+                    <li class="lista_cabesalho_filho"><a href="#excel" class="links_navegacao">excel</a></li>
+                    <li class="lista_cabesalho_filho"><a href="#Html_css" class="links_navegacao">HTML e CSS</a></li>
+                </ul>
+            </menu>
+            
         </div>
     </header>
 
     <main class="main_contain">
 
-        <section class="main_contain_filho sectionsClass">
+        <section class="main_contain_filho sectionsClass" id="sobreMIM">
             <ul class="descricao">
                 <li class="descricao_filho">Sobre mim</li>
             </ul>
 
             <p class="mainParagrafos">
-               Meu nome e João Pedro, moro na cidade de gurupi no estado do Tocantins 
-               fiz este portifolio em busca do meu primeiro emprego no ramo da programação
-               ja estudo progrmação a 1 ano e 2 meses, atualmante estou fazendo cursos na plataforma de encino <a href="https://www.alura.com.br/?utm_term=alura&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Institucional&utm_source=google&utm_medium=cpc&utm_content=697522196628&campaign_id=386166608_21666755648_697522196628&utm_id=386166608_21666755648_697522196628&hsa_acc=7964138385&hsa_cam=%5BSearch%5D+%5BPerformance%5D+-+Institucional&hsa_grp=21666755648&hsa_ad=697522196628&hsa_src=g&hsa_tgt=kwd-300088401&hsa_kw=alura&hsa_mt=e&hsa_net=google&hsa_ver=3&gad_source=1&gclid=Cj0KCQiA_NC9BhCkARIsABSnSTbmm33NmwIKnTlH2feZwNJCzOqjm6SqNLlty41EiwpIqS1hZR-JrEsaAsp-EALw_wcB" target="_blank">Alura</a>
-               tenho conhecimeto em linguagens como html css javascript basico, php e java,
-               banco de dados data since. <span class="Destaque">Abaixo irei listar alguns dos meus principais projetos:</span>
+                Meu nome é João Pedro, moro na cidade de Gurupi, no estado do Tocantins.
+                Fiz este portfólio em busca do meu primeiro emprego no ramo da programação.
+                Já estudo programação há 1 ano e 2 meses. Atualmente, estou fazendo cursos na plataforma de ensino <a href="https://www.alura.com.br" target="_blank">Alura</a>.
+                Tenho conhecimento em linguagens como HTML, CSS, JavaScript básico, PHP e Java, além de banco de dados e Data Science.
+                <span class="Destaque">Abaixo, listo alguns dos meus principais projetos:</span>
             </p>
         </section>
 
@@ -61,7 +70,9 @@
             </div> 
 
             <p class="mainParagrafos">
-              Primeiro irei falar sera de uma gerenciador de dependencias composer tenho em projeto que faz buscas de cursos Os pacotes utilisados forão o guzzlehttp/guzzle 7.9,symfony/dom-crawler 4.2,symfony/css-selector 7.1 da alura codigos escritos em php, o pacote pode ser baixado pelo <a href="https://packagist.org/packages/jp-ctrl983/buscador-curso" target="_blank" class="links">packagist.org</a>, ou se preferiri ver o codigo no <a href="https://github.com/Jp-ctrl983/composer-buscador-alura-" class="links">github</a>           
+                Primeiro, irei falar sobre o gerenciador de dependências Composer. Tenho um projeto que realiza buscas de cursos.
+                Os pacotes utilizados foram: guzzlehttp/guzzle 7.9, symfony/dom-crawler 4.2 e symfony/css-selector 7.1, da Alura.
+                Os códigos foram escritos em PHP. O pacote pode ser baixado pelo <a href="https://packagist.org/packages/jp-ctrl983/buscador-curso" target="_blank" class="links">Packagist.org</a>, ou, se preferir, é possível ver o código no <a href="https://github.com/Jp-ctrl983/composer-buscador-alura-" class="links">GitHub</a>.           
             </p>
 
                 <button type="button" class="composer_json" id="botao_composer" onclick="composer()">
@@ -131,14 +142,14 @@
             </div> 
 
             <p class="mainParagrafos">
-                Meu conhecimento em java e intermediario conheso bem a sintaxe de orintação a objeto e seus 4 pilares (Polimorfismo, Abstratismo, Encapsulamento, Herança) conheço tebém sitaxes basicas como variaveis tipos de dados detre ourtos assuntos como api, cursos feitos na escola de programação Alura. 
+                Meu conhecimento em Java é intermediário. Conheço bem a sintaxe de orientação a objetos e seus 4 pilares: Polimorfismo, Abstração, Encapsulamento e Herança. Também conheço sintaxes básicas, como variáveis, tipos de dados, entre outros assuntos, como API. Os cursos foram realizados na escola de programação Alura.
             </p>
 
             <a href="https://github.com/Jp-ctrl983/src/blob/main/br/principal/Principal.java" target="_blank" class="java_git">Exemplo de codigo no git hub</a>
         </section>
 
 
-        <section class="main_contain_filho sectionsClass">
+        <section class="main_contain_filho sectionsClass" id="php">
             <div class="main_icons">
                 <ul class="descricao">
                     <li class="descricao_filho"><a href="https://www.php.net/manual/pt_BR/index.php" 
@@ -149,14 +160,12 @@
 
 
             <p class="mainParagrafos">
-                Em relação com o php tenho muito conhecimento orintação a objeto e seus 4 pilares 
-                manipulação de arquivos banco de dados sqlite utilisado o PDO e suas extenções 
-                um pouco de conhecimento de php na web junto com o html, os estudos forão feitos tambem na plataforma de encino Alura (Online). 
+                Em relação ao PHP, tenho amplo conhecimento em orientação a objetos e seus 4 pilares: Polimorfismo, Abstração, Encapsulamento e Herança. Tenho experiência com manipulação de arquivos e banco de dados SQLite, utilizando o PDO e suas extensões. Possuo também algum conhecimento em PHP para web integrado com HTML. Os estudos foram realizados na plataforma de ensino Alura (online).
             </p>
             <a href="https://github.com/Jp-ctrl983/scm" target="_blank" class="style_bonton">Pojeto pratico no github</a>
         </section>
 
-        <section class="main_contain_filho sectionsClass">
+        <section class="main_contain_filho sectionsClass" id="JavaScript">
             <div class="main_icons">
                 <ul class="descricao">
                     <li class="descricao_filho"><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" class="linksParaDocumentacao">Javascript <img src="img/javascript.png" alt="Javascript" class="imgagens_icons"></a></li>
@@ -165,11 +174,11 @@
             </div> 
 
             <p class="mainParagrafos">
-               Como no php meu conhecimento tabem chega no javascript com conhecimentos basicos de backend mas sei bem manipular o <span style="font-weight: bold;">DOM</span > do html utilizar functions basicas dentres outras funcioinalidades com esta gigante liguagem de programação. 
+                Assim como no PHP, meu conhecimento também abrange o JavaScript, com uma base em desenvolvimento backend. Tenho boa habilidade em manipular o <span style="font-weight: bold;">DOM</span> do HTML, utilizar funções básicas, entre outras funcionalidades dessa poderosa linguagem de programação.
             </p>
         </section>
 
-        <section class="main_contain_filho sectionsClass">
+        <section class="main_contain_filho sectionsClass" id="excel">
             <div class="main_icons">
                 <ul class="descricao">
                     <li class="descricao_filho"><a href="https://support.microsoft.com/pt-br/excel" target="_blank" class="linksParaDocumentacao">Exel <img src="img/exel.webp" alt="Exel" class="imgagens_icons"></a></li>
@@ -178,11 +187,11 @@
             </div> 
 
             <p class="mainParagrafos">
-                Exel uma ferramenta muito utilisada para organisação finaceira de muitas empresas em todo o pais tenho curso de exel, feito de forma presencial sobre o encino no <span style="font-weight: bold; text-transform: uppercase;"><a href="https://www.to.senac.br/" target="_blank" class="links">senac</a></span> com carga horaria de 40h.
+                Excel é uma ferramenta muito utilizada para organização financeira de muitas empresas em todo o país. Tenho curso de Excel, feito de forma presencial, sobre o ensino no <span style="font-weight: bold; text-transform: uppercase;"><a href="https://www.to.senac.br/" target="_blank" class="links">Senac</a></span>, com carga horária de 40h.
             </p>
         </section>
 
-        <section class="main_contain_filho sectionsClass">
+        <section class="main_contain_filho sectionsClass" id="Html_css">
             <div class="main_icons">
                 <ul class="descricao">
                     <li class="descricao_filho">
@@ -196,8 +205,7 @@
             </div> 
 
             <p class="mainParagrafos">
-                Com o html e o css meu conhecimento e o mair, dentre todas as linguagens que eu tenho muitos projetos praticos feito na alura e no curso em video (Gratuito sem certificado)conheço bem os conceitos da semantica do html e suas tags sei o manipular o html com 
-                desde conceitos basicos ate resposividade para a alternacia do tamanho das telas, eu de meus projetos praticos e justamente este site como portifolio digital.
+                Com o HTML e o CSS, meu conhecimento é o mais aprofundado entre todas as linguagens que domino. Tenho diversos projetos práticos realizados na Alura e em cursos gratuitos no (cursos em vídeo) (sem certificado). Conheço bem os conceitos de semântica do HTML e suas tags, além de saber manipular o HTML desde os conceitos básicos até a criação de layouts responsivos, ajustando o tamanho das telas conforme necessário. Um exemplo desses projetos práticos é justamente este site, que utilizo como portfólio digital.
             </p>
             <a href="https://github.com/Jp-ctrl983/Sites-diversos" target="_blank" class="style_bonton">Pastas de projetos no github</a>
         </section>
@@ -205,14 +213,25 @@
     </main>
 
     <footer class="rodape">
-        <p class="paragrafo_rodape">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, autem. Similique quam libero autem sit iure tenetur recusandae. Corporis illum aspernatur fuga architecto harum! Debitis accusamus beatae iure nobis explicabo!
+
+        <div class="rodape_contain">
+            <p class="paragrafo_rodape">
+                <span style="font-weight: 600; font-size: 16px;">Contato:</span> 
+                e-mail:<a href="mailto:jpdrfernandesnascimento@gmail.com" class="email"> jpdrfernandesnascimento@gmail.com</a>
+            </p>
+        </div>
+
+        <div class="contain_rodape_links">
+            <p class="Redes">Redes Sociais</p>
+
+            <a href="https://www.instagram.com/jpfernandesnasc/" target="_blank"><img src="img/instagram.png" alt="instagram" class="redes_sociais"></a>
+            <a href="https://github.com/Jp-ctrl983" target="_blank"><img src="img/github.png" alt="github" class="redes_sociais"></a>
+            <a href="https://www.youtube.com/@Joao.desenvolvedor" target="_blank"><img src="img/youtube.png" alt="youtube" class="redes_sociais"></a>
+        </div>
+
+        <p class="rodape_final">
+            Site feito por João Pedro. Todos os direitos reservados. <span style="color: rgb(223, 0, 0); text-align: center;">&copy;</span> 
         </p>
-        
-        <p class="Redes">Redes Sociais</p>
-        <a href="https://www.instagram.com/jpfernandesnasc/" target="_blank"><img src="img/instagram.png" alt="instagram" class="redes_sociais"></a>
-        <a href="https://github.com/Jp-ctrl983" target="_blank"><img src="img/github.png" alt="github" class="redes_sociais"></a>
-        <a href="https://www.youtube.com/@Joao.desenvolvedor" target="_blank"><img src="img/youtube.png" alt="youtube" class="redes_sociais"></a>
 
     </footer>
     <script src="js/app.js"></script>

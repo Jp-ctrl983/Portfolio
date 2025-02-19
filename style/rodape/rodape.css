@@ -5,18 +5,54 @@
     padding: 10px;
     margin-top: 1.5em;
     margin-bottom: 0;
+}
 
+.rodape_contain {
+    font-size: 15px;
+    text-align: start;
+}
+
+.rodape_contain {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.contain_rodape_links {
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+.Redes {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
 }
 
 .redes_sociais {
-    width: 24px;
-    padding: 2px;
-    margin: 1px;
+    width: 26px;
+    margin-left: 10px;
 }
 
-.Redes  {
-    text-transform: uppercase;
+.rodape_final {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: auto;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.email {
+    color: rgb(0, 1, 65);
+    text-decoration: none;
     font-size: 16px;
-    font-weight: 400;
-    padding-top: 10px;
+}
+
+.email:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    margin: 1px;
 }

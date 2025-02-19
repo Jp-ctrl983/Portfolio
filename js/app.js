@@ -7,3 +7,13 @@ function composer() {
         div.classList.add('json_composer')
     }
 }
+
+function clickMenu() {
+    let itens = document.getElementById('itens')
+
+    if (itens.classList.contains('navegacao')) {
+        itens.classList.remove('navegacao')
+    } else {
+        itens.classList.add('navegacao')
+    }
+}
